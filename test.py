@@ -12,7 +12,7 @@ fpsClock = pygame.time.Clock()
 width = 1008
 height = 710
 DISPLAYSURF = pygame.display.set_mode((width, height), 0, 32)
-pygame.display.set_caption('Trek Game Test')
+pygame.display.set_caption('scifi Game Test')
 background = pygame.image.load('space_port.gif')
 
 UP = 'up'
@@ -44,8 +44,9 @@ def move(direction_move, sprite_move, sprite_move_x, sprite_move_y):
     return sprite_move, sprite_move_x, sprite_move_y
 
 
-pygame.mixer.music.load('8-punk-8-bit-music.mp3')
-pygame.mixer.music.play(-1, 0.0)
+# pygame.mixer.music.load('8-punk-8-bit-music.mp3')
+# pygame.mixer.music.play(-1, 0.0)
+
 while True:
     DISPLAYSURF.blit(background, (0, 0))
 
