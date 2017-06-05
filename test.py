@@ -31,16 +31,20 @@ def move(direction_move, sprite_move, sprite_move_x, sprite_move_y):
 
         if direction_move == K_UP:
             sprite_move_y -= 2
-            sprite_move = pygame.image.load('up.png')
+            sprite_move = pygame.image.load('bot.png')
+            # sprite_move = pygame.image.load('up.png')
         elif direction_move == K_DOWN:
             sprite_move_y += 2
-            sprite_move = pygame.image.load('down.png')
+            sprite_move = pygame.image.load('bot.png')
+            # sprite_move = pygame.image.load('down.png')
         elif direction_move == K_LEFT:
             sprite_move_x -= 2
-            sprite_move = pygame.image.load('left.png')
+            sprite_move = pygame.image.load('bot.png')
+            # sprite_move = pygame.image.load('left.png')
         elif direction_move == K_RIGHT:
             sprite_move_x += 2
-            sprite_move = pygame.image.load('right.png')
+            sprite_move = pygame.image.load('bot.png')
+            # sprite_move = pygame.image.load('right.png')
     return sprite_move, sprite_move_x, sprite_move_y
 
 
