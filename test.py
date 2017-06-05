@@ -14,6 +14,8 @@ height = 710
 DISPLAYSURF = pygame.display.set_mode((width, height), 0, 32)
 pygame.display.set_caption('scifi Game Test')
 background = pygame.image.load('space_port.gif')
+game_icon = pygame.image.load('bot.png')
+pygame.display.set_icon(game_icon)
 
 UP = 'up'
 LEFT = 'left'
@@ -25,7 +27,7 @@ DOWN = 'down'
 # left_sprite = 'left.png'
 up_sprite = down_sprite = right_sprite = left_sprite = 'bot.png'
 
-sprite = pygame.image.load('down.png')
+sprite = pygame.image.load('bot.png')
 sprite_x = width / 2
 sprite_y = height / 2
 direction = None
